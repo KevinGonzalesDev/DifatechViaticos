@@ -1,0 +1,14 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Login from '@/pages/Login.vue'
+
+const routes = [
+    { path: '/', name: 'login', component: Login },
+    // luego agregarás: dashboard, perfil, reportes, etc.
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+})
+
+export default router
